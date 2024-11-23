@@ -1,0 +1,129 @@
+/* Resetare stiluri */
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   /* Header */
+  header {
+    background-color: #D4AF37;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+/* Stil general pentru pagină */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stil pentru meniul dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.dropdown-btn {
+    background-color: #800020;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center; 
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #800020;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center; /* Alignare centrală */
+    margin: 0; /* Margin de 0 pentru a preveni suprapunerea */
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Animare */
+}
+
+.dropdown-content a:hover {
+    background-color: #D4AF37;
+}
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.dropdown-btn:hover {
+    background-color: #800020;
+}
+
+/* Stiluri pentru prezentarea vieții lui Scorsese */
+.prezentare_viata {
+    padding: 2rem;
+    background-color: #F4F4F2;
+    margin: 2rem 10%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+
+h2, h3 {
+    color: #800020; 
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.image{
+    width: 300px;
+    height: 200px
+}
+
+ /*Responsive*/
+ @media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+}
+
+/* Pentru tablete */
+@media (max-width: 768px) {
+    .prezentare_viata {
+        flex-wrap: wrap;
+    }
+}
+
+/* Pentru telefoane */
+@media (max-width: 480px) {
+    .prezentare_viata {
+        flex-direction: column;
+    }
+}
